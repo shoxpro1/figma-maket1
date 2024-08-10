@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+span,
+a,
+label {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 90px;
+}
+.homediv {
+  width: 50%;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hometitle {
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.pic {
+  width: 100px;
+  margin-left: 20px;
+  transform: translateY(19px);
+}
+.hometext {
+  font-size: 22px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.get {
+  font-size: 30px;
+  padding: 23px 80px;
+  background-color: #263238;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.homepic {
+  width: 45%;
+}
+.container {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'Speaking Writing Reading'
+    'Speaking Listening Listening';
+}
+.btn{
+  width: 200px;
+  height: 50px;
+  border-color: black;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.play{
+display: flex;
+flex-wrap: wrap;
+column-gap: 3%;
+}
+
+.sec {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.pri{
+  font-size: 55px;
+  margin-left: 42.5%;
+}
+.hs{
+  margin-bottom: 15px; 
+  font-size: 55px;
+}
+.pay{
+  width: 31%;
+}
+.display{
+  display: flex;
+  max-width: 1600px;
+
+  flex-wrap: wrap;
+  padding: 20px;
+  column-gap: 10%;
+  margin: 20px auto;
+}
+.imli{
+width: 50%;
+}
+.input{
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+}
+.sub{
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.but{
+  border: none;
+  background-color: gray;
+  height: 30px;
+  border-radius: 5px;
+}
+.lorem{
+  margin-bottom: 25px;
+}
+.payy{
+  width: 300px;
+}
+.disp{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 25%;
+  
+}
+.lo{
+  margin-bottom: 15px;
+}
+.ill{
+  font-size: 45px;
+}
+.im{
+  width: 350px;
+}
+.imm{
+  width: 50%;
+}
+.ping{
+  width: 100%;
+}
+.Speaking {
+  grid-area: Speaking;
+  background-color: gray ;
+
+}
+
+.Writing {
+  grid-area: Writing;
+  background-color: gray ;
+}
+
+.Reading {
+  grid-area: Reading;
+  background-color:  gray ;
+}
+
+.Listening {
+  grid-area: Listening;
+  background-color:  gray ;
+}
+.dis{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.vo{
+  width: 50%;
+}
+.kut{
+  width: 50%;
+}
+
+@media(max-width:1000px){
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'Speaking Writing'
+    'Reading Listening';
+  }
+  .imm{ 
+    width: 100%;
+  }
+  .big{
+    width: 100%;
+  }
+  .im{
+    width: 100%;
+  }
+  .imli{
+    width: 100%;
+  }
+  .vo{
+    width: 100%;
+  }
+  .home{
+    padding: 0px;
+  }
+}
+@media(max-width:700px){
+  .homediv{
+  text-align: center;
+  width: 100%;
+  }
+  .pic{
+    display: none;
+  }
+  .hometitle{
+    text-align: center;
+    margin-left: 30%;
+    font-size: 30px;
+  }
+.homepic{
+  width: 100%;
+}
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'Speaking'
+    'Writing'
+    'Reading'
+    'Listening';
+  }
+}
+@media(max-width: 575px){
+  .pic {
+    display: none;
+  }
+  .pay{
+    width: 100%;
+  }
+}`
